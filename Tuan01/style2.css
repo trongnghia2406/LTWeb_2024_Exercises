@@ -9,7 +9,7 @@ body {
     font-size: 24px;
     margin: 0 auto;
     min-width: 1200px;
-    height: 500px;
+    height: 100vh;
     text-align: center;
 }
 
@@ -30,11 +30,11 @@ body {
 }
 
 .content {
-    height: 300px;
+    height: calc(100% - 298px);
 }
 
 .footer {
-    height: 80px;
+    height: 160px;
 }
 
 .left-content {
@@ -42,9 +42,9 @@ body {
     min-width: calc(30% - 2px);
     border: solid 0.5px gray;
     height: 100%;
-    text-align: center;
     display: flex;
-    justify-items: center;
+    text-align: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -55,6 +55,6 @@ body {
     height: 100%;
     text-align: center;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }

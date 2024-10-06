@@ -1,0 +1,85 @@
+html,
+body,
+p {
+    padding: 0;
+    margin: 0;
+    /* không dùng các font có chân */
+    font-size: 13px;
+    color: black;
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* for id */
+/* for class */
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section_text_2 {
+    height: 120px;
+    background-color: #F3F3F3;
+}
+
+#section_text_2 .alpha {
+    float: left;
+    width: 50%;
+}
+
+#section_text_2 .alpha img {
+    padding-top: 35px;
+    width: 170px;
+}
+
+#section_text_2 .omega {
+    text-align: right;
+    float: right;
+    width: 50%;
+    padding-top: 40px;
+}
+
+#section_text_2 .omega a {
+    background-color: #F77825;
+    padding: 18px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#section_header_1 {
+    height: 100px;
+    color: #7F7F7F;
+}
+
+#section_header_1 ul {
+    padding: 0;
+    margin-right: 0;
+}
+
+#section_header_1 ul li {
+    list-style-type: none;
+    float: left;
+}
+
+#section_header_1 .navbar-left {
+    float: left;
+    width: 50%;
+}
+
+#section_header_1 .right_socials {
+    float: right;
+    width: 50%;
+}
+
+#section_header_1 .navbar-collapse .navbar-left li a {
+    color: #7F7F7F;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#section_header_1 .navbar-collapse .navbar-left li {
+    width: fit-content;
+    padding: 50px;
+}
