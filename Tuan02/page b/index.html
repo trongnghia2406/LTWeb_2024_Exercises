@@ -37,21 +37,16 @@
                     <div class="sixteen columns firas2">
                         <nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg pix_nav_1">
                             <div class="containerss">
-                                <div class="navbar-header">
-                                    <!-- <button data-target="#navbar-collapse-02" data-toggle="collapse"
-                                        class="navbar-toggle" type="button">
-                                        <span class="sr-only">Toggle navigation</span>
-                                    </button> -->
-
-                                </div>
                                 <div class="padding_25 right_socials">
                                     <ul class="bottom-icons">
-                                        <li><a class="pi pixicon-facebook2 light_gray" href="#fakelink"><i
-                                                    class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a class="pi pixicon-twitter2 light_gray" href="#fakelink"><i
-                                                    class="fa-brands fa-twitter"></i></a></li>
                                         <li><a class="pi pixicon-instagram light_gray" href="#fakelink"><i
                                                     class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a class="pi pixicon-twitter2 light_gray" href="#fakelink"><i
+                                                    class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a class="pi pixicon-facebook2 light_gray" href="#fakelink"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+
+
                                     </ul>
                                 </div>
                                 <div id="navbar-collapse-02" class="collapse navbar-collapse">
@@ -73,17 +68,17 @@
                 <div class="sixteen columns">
                     <div id="myCarousel" class="carousel slide" data-interval="false">
                         <!-- Indicators -->
-                        <ol class="carousel-indicators">
+                        <!-- <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
+                        </ol> -->
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
                                 <img src="images/main/image-1.jpg" alt="">
                                 <div class="carousel-caption editContent">
-                                    <h3>Thumbnail label</h3>
+                                    <h3 class="label">Thumbnail label</h3>
                                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
                                         odio sem nec.</p>
                                 </div>
@@ -91,7 +86,7 @@
                             <div class="item">
                                 <img src="images/main/image-2.jpg" alt="">
                                 <div class="carousel-caption editContent">
-                                    <h3>Thumbnail label</h3>
+                                    <h3 class="label">Thumbnail label</h3>
                                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
                                         odio sem nec.</p>
                                 </div>
@@ -99,7 +94,7 @@
                             <div class="item">
                                 <img src="images/main/image-3.jpg" alt="">
                                 <div class="carousel-caption editContent">
-                                    <h3>Thumbnail label</h3>
+                                    <h3 class="label">Thumbnail label</h3>
                                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
                                         odio sem nec.</p>
                                 </div>
@@ -124,7 +119,7 @@
                                     </div>
                                     <div class="text_gym_style">
                                         <p class="gym_st"><span class="editContent">Welcome to Gym</span></p>
-                                        <p class="gym_text"><span class="editContent">Lorem ipsum dolor sit amet
+                                        <p class="gym_text"><span class="editContent">Lorem ipsum dolor sit amet <br>
                                                 consectetur adipiscing elite.</span></p>
                                     </div>
 
@@ -138,7 +133,7 @@
                                     </div>
                                     <div class="text_gym_style">
                                         <p class="gym_st"><span class="editContent">Fitness Activities</span></p>
-                                        <p class="gym_text"><span class="editContent">Lorem ipsum dolor sit amet
+                                        <p class="gym_text"><span class="editContent">Lorem ipsum dolor sit amet <br>
                                                 consectetur adipiscing elite.</span></p>
                                     </div>
                                     <span class="link_3_btn editContent"><a class="slow_fade pix_text" href="#">Join
@@ -151,7 +146,7 @@
                                     </div>
                                     <div class="text_gym_style">
                                         <p class="gym_st"><span class="editContent">High quality Staff</span></p>
-                                        <p class="gym_text"><span class="editContent">Lorem ipsum dolor sit amet
+                                        <p class="gym_text"><span class="editContent">Lorem ipsum dolor sit amet <br>
                                                 consectetur adipiscing elite.</span></p>
                                     </div>
                                     <span class="link_3_btn editContent">
@@ -199,7 +194,7 @@
                 <div class="one-third column">
                     <div class="flat_pricing pix_builder_bg">
                         <p class="big_title orange margin_bottom_10 editContent">
-                            <strong>$14.99</strong>
+                            <strong class="orange_text">$14.99</strong>
                         </p>
                         <p class="light_gray editContent">
                             <strong>Premium Event Ticket</strong>
@@ -221,7 +216,8 @@
                                 </span>
                             </li>
                         </ul>
-                        <a href="#" class="active_bg_open pix_button btn_normal btn_big bold_text orange_bg ">
+                        <a href="#"
+                            class="active_bg_open blue-buy-ticket pix_button btn_normal btn_big bold_text orange_bg ">
                             <span>Buy Tickets Now</span>
                         </a>
                     </div>
@@ -268,24 +264,32 @@
                                     <span class="pix_text">
                                         GET YOUR TICKET NOW!
                                     </span>
+                                    <div class="underline"></div>
                                 </span>
                             </div>
                             <div class="segment pix_builder_bg"></div>
                             <span class="editContent">
                                 <p class="subtext_style">
-                                    Just Subscribe to get full access to our new tutorial + all attachments files.
+                                    Just Subscribe to get full access to our <br>new tutorial + all attachments files.
                                 </p>
                             </span>
                             <div class="contact_st">
                                 <form id="contact_form" pix-confirm="hidden_pix_15">
-                                    <div id="result"></div>
-                                    <input type="text" name="name" id="name" placeholder="Enter Your Full Name"
-                                        class="pix_text">
-                                    <input type="email" name="email" id="email" placeholder="Enter Your Email"
-                                        class="pix_text">
-                                    <button class="subscribe_btn pix_text" id="submit_btn_15">
-                                        <span class="editContent">SUBSCRIBE TO DOWNLOAD</span>
-                                    </button>
+                                    <div id="result">
+                                        <div>
+                                            <input type="text" name="name" id="name" placeholder="Enter Your Full Name"
+                                                class="pix_text">
+                                        </div>
+                                        <div>
+                                            <input type="email" name="email" id="email" placeholder="Enter Your Email"
+                                                class="pix_text">
+                                        </div>
+                                        <div>
+                                            <button class="subscribe_btn pix_text" id="submit_btn_15">
+                                                <span class="editContent">SUBSCRIBE TO DOWNLOAD</span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -293,7 +297,7 @@
                 </div>
             </div>
         </div>
-        <div id="hidden_pix_15" class="confirm_page confirm_page_15 pix_builder_bg">
+        <!-- <div id="hidden_pix_15" class="confirm_page confirm_page_15 pix_builder_bg">
             <div class="pixfort_party_15">
                 <div class="confirm_header">
                     <span class="editContent">
@@ -317,7 +321,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="pixfort_party_15" id="section_party_4">
             <div class="foot_st pix_builder_bg">
                 <div class="container">
@@ -333,17 +337,20 @@
                         </div>
                         <div class="nine columns omega ">
                             <div class="socbuttons">
-                                <div class="soc_icons pix_builder_bg">
-                                    <ul class="bottom-icons">
-                                        <li><a class="pi pixicon-facebook2 normal_gray" href="#fakelink"></a></li>
-                                        <li><a class="pi pixicon-twitter2 normal_gray" href="#fakelink"></a></li>
-                                        <li><a class="pi pixicon-instagram normal_gray" href="#fakelink"></a></li>
-                                    </ul>
-                                </div>
                                 <div class="likes_st">
                                     <span class="editContent">
                                         <span class="pix_text">Your likes &amp; share makes us happy!</span>
                                     </span>
+                                </div>
+                                <div class="soc_icons pix_builder_bg">
+                                    <ul class="bottom-icons">
+                                        <li><a class="pi pixicon-facebook2 normal_gray" href="#fakelink"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a class="pi pixicon-twitter2 normal_gray" href="#fakelink"><i
+                                                    class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a class="pi pixicon-instagram normal_gray" href="#fakelink"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
