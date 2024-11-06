@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #7ED321;
+    font-weight: 600;
+}
+
+.wrapper {
+    border: 10px solid #E3E3E3;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.wrapper p {
+    margin-bottom: 20px;
+}
+
+.wrapper i {
+    color: #B9B9B9;
+}
+
+.wrapper .account-input {
+    margin-bottom: 20px;
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+}
+
+.wrapper .account-input i {
+    padding: 15px;
+}
+
+.wrapper .account-input input {
+    background: #F9F9F9;
+    height: 28px;
+    width: 85%;
+    border: none;
+    outline: none;
+    border-left: 1px solid #ccc;
+    padding-left: 18px;
+}
+
+.wrapper .birth-gender {
+    display: flex;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.wrapper .birth {
+    width: 50%;
+}
+
+.wrapper.gender {
+    width: 50%;
+}
+
+.wrapper .birth-gender p {
+    margin-bottom: 15px;
+}
+
+.wrapper .birth input {
+    margin-right: 10px;
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+    height: 45px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.birth-gender input[type="radio"]+label {
+    display: table-cell;
+    height: 45px;
+    width: 143px;
+    margin: 0;
+    padding: 10px;
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-weight: 400;
+}
+
+input[type="radio"]:checked+label {
+    color: #fff;
+    background: #7ED321;
+}
+
+.wrapper .payment-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .payment-input .credit-card {
+    display: flex;
+    width: 50%;
+}
+
+.wrapper .payment-input .paypal {
+    display: flex;
+    width: 50%;
+}
+
+.payment-input div {
+    display: inline-block;
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+    color: #ccc;
+    text-align: center;
+    font-weight: 400;
+    align-items: center;
+}
+
+.payment-input i {
+    margin-right: 10px;
+}
+
+.payment-input div:hover {
+    color: #fff;
+    background: #7ED321;
+    cursor: pointer;
+}
+
+.payment-input div:hover i {
+    color: #fff;
+}
+
+.wrapper .cardnumber-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+}
+
+.wrapper .cardnumber-input i {
+    padding: 15px;
+}
+
+.wrapper .cardnumber-input input {
+    background: #F9F9F9;
+    height: 28px;
+    width: 85%;
+    border: none;
+    outline: none;
+    border-left: 1px solid #ccc;
+    padding-left: 18px;
+}
+
+.wrapper .cardcvc-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.wrapper .cvc {
+    width: 49%;
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+}
+
+.wrapper .date {
+    width: 49%;
+}
+
+.wrapper .cvc i {
+    padding: 15px;
+}
+
+.wrapper .cvc input {
+    background: #F9F9F9;
+    height: 28px;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-left: 1px solid #ccc;
+    padding-left: 18px;
+}
+
+.wrapper .cardcvc-input .date select {
+    height: 100%;
+    width: 49%;
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+}
+
+.wrapper .accept input {
+    width: 20px;
+    padding: 10px;
+}
+
+.wrapper .accept label {
+    color: #ccc;
+    font-weight: 400;
+}

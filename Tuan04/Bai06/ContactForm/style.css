@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    width: 720px;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid #ccc;
+    border-radius: 5px;
+    padding: 30px 40px;
+}
+
+.wrapper form {
+    width: 100%;
+}
+
+.wrapper h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    padding: 10px;
+    height: fit-content;
+    border: solid 1px #E6E6E6;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 13px;
+    background-color: #F7F7F7;
+}
+
+.wrapper .name-input {
+    margin-top: 25px;
+}
+
+.wrapper .email-phone-wrap {
+    display: flex;
+}
+
+.wrapper .email-phone-wrap .email-box {
+    margin-right: 8px;
+}
+
+.wrapper .email-phone-wrap .tel-box {
+    margin-left: 8px;
+}
+
+.wrapper .input-box p {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #F7F7F7;
+}
+
+.wrapper .input-box input::placeholder {
+    color: #DBDCD7;
+    font-weight: 500;
+}
+
+.wrapper #services {
+    width: 100%;
+    background: #F7F7F7;
+    border: none;
+    outline: none;
+    font-weight: 600;
+
+}
+
+.wrapper .message-box {
+    background: #fff;
+}
+
+.wrapper #message {
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.wrapper #message::placeholder {
+    color: #DBDCD7;
+}
+
+.wrapper .btn {
+    width: 100%;
+    background: #333333;
+    height: 40px;
+    border: none;
+    border-radius: 999px;
+    color: #fff;
+}
+
+.wrapper .btn i {
+    padding-left: 10px;
+}
+
+.input-box input.error,
+.input-box select.error,
+.input-box textarea.error {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 18px;
+}
