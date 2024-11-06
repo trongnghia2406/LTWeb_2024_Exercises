@@ -24,14 +24,20 @@
                 <div class="account-input fullname">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" placeholder="Full Name">
+                    <span class="error-message"></span>
+
                 </div>
                 <div class="account-input email">
                     <i class="fa-solid fa-envelope"></i>
                     <input type="text" placeholder="Email Address">
+                    <span class="error-message"></span>
+
                 </div>
                 <div class="account-input password">
                     <i class="fa-solid fa-key"></i>
                     <input type="text" placeholder="Password">
+                    <span class="error-message"></span>
+
                 </div>
             </div>
             <div class="birth-gender">
@@ -40,6 +46,8 @@
                     <input type="number" placeholder="DD" min="1" max="31">
                     <input type="number" placeholder="MM" min="1" max="12">
                     <input type="number" placeholder="YYYY" min="1900" max="2100">
+                    <span class="error-message"></span>
+
                 </div>
                 <div class="gender">
                     <p>Gender</p>
@@ -47,6 +55,8 @@
                     <label for="male">Male</label>
                     <input type="radio" name="gender" id="female" value="female">
                     <label for="female">Female</label>
+                    <span class="error-message"></span>
+
                 </div>
             </div>
             <p>Payment Details</p>
@@ -61,11 +71,15 @@
             <div class="cardnumber-input">
                 <i class="fa-regular fa-credit-card"></i>
                 <input type="number" placeholder="Card Number">
+                <span class="error-message"></span>
+
             </div>
             <div class="cardcvc-input">
                 <div class="cvc">
                     <i class="fa-solid fa-user"></i>
                     <input type="number" placeholder="Card CVC">
+                    <span class="error-message"></span>
+
                 </div>
                 <div class="date">
                     <select name="day-month" id="">
@@ -84,6 +98,8 @@
             </div>
         </form>
     </div>
+    <script src="./main.js"></script>
+
 </body>
 
 </html>

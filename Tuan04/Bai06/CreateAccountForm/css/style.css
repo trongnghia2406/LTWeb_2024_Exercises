@@ -206,3 +206,29 @@ input[type="radio"]:checked+label {
     color: #ccc;
     font-weight: 400;
 }
+
+.error-message {
+    color: red;
+    font-size: 13px;
+}
+
+.account-input input.error,
+.birth input.error,
+.cardnumber-input input.error,
+.cardcvc-input input.error,
+.accept input.error,
+select.error {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+.account-input.error,
+.birth.error,
+.cardnumber-input.error,
+.cardcvc-input.error {
+    border: 2px solid red !important;
+}
+
+.accept.error input {
+    border: 2px solid red !important;
+}
