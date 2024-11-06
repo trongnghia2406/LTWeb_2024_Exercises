@@ -134,3 +134,13 @@ body {
     color: #431C4D;
     font-weight: 600;
 }
+
+.error-message {
+    color: red;
+    font-size: 13px;
+}
+
+input.error {
+    border: 2px solid red !important;
+    outline: none;
+}

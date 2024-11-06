@@ -18,10 +18,13 @@
         <form action="" class="content">
             <h1>Sign In</h1>
             <div class="input-box user-box">
-                <input type="text" placeholder="username or email" required>
+                <input type="text" id="username" placeholder="username or email">
+                <span class="error-message"></span>
+
             </div>
             <div class="input-box pass-box">
-                <input type="text" placeholder="password" required>
+                <input type="text" id="password" placeholder="password">
+                <span class="error-message"></span>
             </div>
             <div class="signin-btn">
                 <button type="submit">Sign In</button>
@@ -42,6 +45,7 @@
             </div>
         </form>
     </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
