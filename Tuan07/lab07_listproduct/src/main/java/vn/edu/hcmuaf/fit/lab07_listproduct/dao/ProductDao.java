@@ -1,6 +1,8 @@
 package vn.edu.hcmuaf.fit.lab07_listproduct.dao;
 
+import org.jdbi.v3.core.Jdbi;
 import vn.edu.hcmuaf.fit.lab07_listproduct.dao.db.DBConnect;
+import vn.edu.hcmuaf.fit.lab07_listproduct.dao.db.JdbiConnect;
 import vn.edu.hcmuaf.fit.lab07_listproduct.dao.model.Product;
 
 import java.sql.ResultSet;
@@ -23,6 +25,11 @@ lab8: database
  * 6. thực hiện result set để lấy dữ liệu
  * 7. Triển khai các hàm get trong product Dao
  -> tới đây có thể hoàn thành load dữ liệu lên với jdbc
+ TRIỂN KHAI VỚI JDBI
+ 1. search maven repository, search jdbicore, jdbi3core, cái mới nhất, copy dependencies
+ 2. paste vào file pom.xml, reload maven
+ 3. Tạo class JDBI Connect trong db
+ 4. copy chỉnh sửa hàm getall, getbyid trong productdao cho phù hợp với jdbi
  * */
 public class ProductDao {
 
@@ -48,21 +55,26 @@ public class ProductDao {
 
     public List<Product> getAll() {
 //        return new ArrayList<>(data.values()); // lab 7: hard code
-        // lab8: database
-        Statement statement = DBConnect.get();
-        ResultSet rs = null;
-        ArrayList<Product> re = new ArrayList<>();
-        try {
-            rs = statement.executeQuery("select  * from products");
+        // lab8: database: jdbc
+//        Statement statement = DBConnect.get();
+//        ResultSet rs = null;
+//        ArrayList<Product> re = new ArrayList<>();
+//        try {
+//            rs = statement.executeQuery("select  * from products");
+//
+//            while (rs.next()) {
+//                re.add(new Product(rs.getInt(1), rs.getString(2),
+//                rs.getDouble(3), rs.getString(4)));
+//            }
+//            return re;
+//        } catch (SQLException e) {
+//            return re;
+//        }
 
-            while (rs.next()) {
-                re.add(new Product(rs.getInt(1), rs.getString(2),
-                rs.getDouble(3), rs.getString(4)));
-            }
-            return re;
-        } catch (SQLException e) {
-            return re;
-        }
+        // lab8: jdbi
+        Jdbi jdbi = JdbiConnect.get();
+        return jdbi.withHandle(handle -> handle.createQuery("select * from products").mapToBean(Product.class).list());
+            // vì product viết đã là bean
     }
 
     public Product getById(int id) {
@@ -70,20 +82,27 @@ public class ProductDao {
 //        if (!data.containsKey(id)) return null;
 //        return data.get(id);
 
-        //lab8: database
-        Statement statement = DBConnect.get();
-        ResultSet rs = null;
-        try {
-            rs = statement.executeQuery("select  * from products");
-
-            if (rs.next()) {
-                return new Product(rs.getInt(1), rs.getString(2),
-                        rs.getDouble(3), rs.getString(4));
-            }
-            return null;
-        } catch (SQLException e) {
-            return null;
-        }
+        //lab8: database: jdbc
+//        Statement statement = DBConnect.get();
+//        ResultSet rs = null;
+//        try {
+//            rs = statement.executeQuery("select  * from products");
+//
+//            if (rs.next()) {
+//                return new Product(rs.getInt(1), rs.getString(2),
+//                        rs.getDouble(3), rs.getString(4));
+//            }
+//            return null;
+//        } catch (SQLException e) {
+//            return null;
+//        }
+        //lab8: jdbi
+        Jdbi jdbi = JdbiConnect.get();
+        return jdbi.withHandle(handle ->
+                handle.createQuery("select * from products where id = :id")
+                        .bind("id", id)
+                        .mapToBean(Product.class).findOne().orElse(null));
+        // trả về product, ko có trả về null
     }
 
     public static void main(String[] args) {
